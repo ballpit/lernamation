@@ -1,3 +1,3 @@
 export const foo = { bar: 'baz' }
 
-export whatever = { hey: 'you' }
+export const whatever = { hey: 'you' }

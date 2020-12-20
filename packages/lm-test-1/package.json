@@ -30,7 +30,7 @@
     "url": "https://github.com/bcomnes/lm-test-1.git"
   },
   "scripts": {
-    "build": "rimraf cjs/* && ascjs esm cjs",
+    "build": "mkdirp cjs && rimraf cjs/* && ascjs esm cjs",
     "prepare": "npm run build",
     "test": "run-s build test:*",
     "test:deps": "dependency-check package.json --no-dev --no-peer",
