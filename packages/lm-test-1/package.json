@@ -22,12 +22,12 @@
     "standard": "^16.0.0",
     "tap": "^14.10.8"
   },
-  "homepage": "https://github.com/bcomnes/lernamation/tree/master/lm-test-1",
+  "homepage": "https://github.com/ballpit/lernamation/tree/master/lm-test-1",
   "keywords": [],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcomnes/lm-test-1.git"
+    "url": "https://github.com/ballpit/lm-test-1.git"
   },
   "scripts": {
     "build": "mkdirp cjs && rimraf cjs/* && ascjs esm cjs",
