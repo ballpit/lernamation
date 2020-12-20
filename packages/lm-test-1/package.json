@@ -22,7 +22,7 @@
     "standard": "^16.0.0",
     "tap": "^14.10.8"
   },
-  "homepage": "https://github.com/ballpit/lernamation/tree/master/lm-test-1",
+  "homepage": "https://github.com/ballpit/lernamation/tree/master/packages/lm-test-1",
   "keywords": [],
   "license": "MIT",
   "repository": {
