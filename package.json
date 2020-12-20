@@ -5,7 +5,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist",
     "lerna-version": "lerna version",
     "lerna-publish": "lerna publish",
     "lerna-list": "lerna list",
@@ -20,6 +20,7 @@
     "lerna-link": "lerna link",
     "lerna-create": "lerna create",
     "lerna-info": "lerna info",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "build": "lerna run build"
   }
 }
