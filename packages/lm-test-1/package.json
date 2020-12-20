@@ -16,7 +16,6 @@
   "devDependencies": {
     "ascjs": "^4.0.0",
     "auto-changelog": "^2.0.0",
-    "dependency-check": "^4.1.0",
     "gh-release": "^4.0.0",
     "npm-run-all2": "^5.0.0",
     "standard": "^16.0.0",
@@ -33,7 +32,6 @@
     "build": "mkdirp cjs && rimraf cjs/* && ascjs esm cjs",
     "prepare": "npm run build",
     "test": "run-s build test:*",
-    "test:deps": "dependency-check package.json --no-dev --no-peer",
     "test:standard": "standard",
     "test:tap": "tap --no-esm --jobs=1"
   },
