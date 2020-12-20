@@ -1,7 +1,7 @@
 {
   "name": "lm-test-1",
   "description": "WIP - nothing to see here",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -13,15 +13,14 @@
   "bugs": {
     "url": "https://github.com/ballpit/lernamation/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "ascjs": "^4.0.0",
-    "npm-run-all2": "^5.0.0",
-    "dependency-check": "^4.1.0",
-    "standard": "^16.0.0",
     "auto-changelog": "^2.0.0",
-    "tap": "^14.10.8",
-    "gh-release": "^4.0.0"
+    "dependency-check": "^4.1.0",
+    "gh-release": "^4.0.0",
+    "npm-run-all2": "^5.0.0",
+    "standard": "^16.0.0",
+    "tap": "^14.10.8"
   },
   "homepage": "https://github.com/bcomnes/lernamation/tree/master/lm-test-1",
   "keywords": [],
