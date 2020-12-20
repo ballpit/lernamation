@@ -37,7 +37,7 @@
     "test:deps": "dependency-check package.json --no-dev --no-peer",
     "test:standard": "standard",
     "test:tap": "tap --no-esm --jobs=1",
-    "version": "run-s prepare version:*",
+    "version": "echo 'version hool ran' && run-s prepare version:*",
     "version:git": "git add cjs"
   },
   "standard": {
