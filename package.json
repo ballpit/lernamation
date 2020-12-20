@@ -7,6 +7,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "version": "lerna version",
+    "publish": "lerna publish",
     "list": "lerna list",
     "changed": "lerna changed",
     "diff": "lerna diff",
