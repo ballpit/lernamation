@@ -1,0 +1,51 @@
+{
+  "name": "lm-test-1",
+  "description": "WIP - nothing to see here",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "exports": {
+    "import": "./esm/index.js",
+    "require": "./cjs/index.js"
+  },
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io)",
+  "bugs": {
+    "url": "https://github.com/ballpit/lernamation/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ascjs": "^4.0.0",
+    "npm-run-all2": "^5.0.0",
+    "dependency-check": "^4.1.0",
+    "standard": "^16.0.0",
+    "auto-changelog": "^2.0.0",
+    "tap": "^14.10.8",
+    "gh-release": "^4.0.0"
+  },
+  "homepage": "https://github.com/bcomnes/lernamation/tree/master/lm-test-1",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcomnes/lm-test-1.git"
+  },
+  "scripts": {
+    "build": "rimraf cjs/* && ascjs esm cjs",
+    "prepare": "npm run build",
+    "test": "run-s build test:*",
+    "test:deps": "dependency-check package.json --no-dev --no-peer",
+    "test:standard": "standard",
+    "test:tap": "tap --no-esm --jobs=1"
+  },
+  "standard": {
+    "ignore": [
+      "dist",
+      "cjs"
+    ]
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/bcomnes"
+  }
+}
