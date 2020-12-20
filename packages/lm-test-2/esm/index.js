@@ -1,3 +1,3 @@
 export const foo = { bar: 'baz' }
 
-export const someThing = { whatever: 'foo' }
+export const someThing = { whatever: 'foo', more: 'blep' }
