@@ -1,0 +1,53 @@
+{
+  "name": "lm-test-2",
+  "description": "WIP - nothing to see here",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "exports": {
+    "import": "./esm/index.js",
+    "require": "./cjs/index.js"
+  },
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io)",
+  "bugs": {
+    "url": "https://github.com/bcomnes/lm-test-2/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ascjs": "^4.0.0",
+    "dependency-check": "^4.1.0",
+    "mkdirp": "^1.0.4",
+    "npm-run-all2": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "standard": "^16.0.0",
+    "tap": "^14.10.8"
+  },
+  "homepage": "https://github.com/bcomnes/lm-test-2",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcomnes/lm-test-2.git"
+  },
+  "scripts": {
+    "build": "mkdirp cjs && rimraf cjs/* && ascjs esm cjs",
+    "prepare": "npm run build",
+    "test": "run-s build test:*",
+    "test:deps": "dependency-check package.json --no-dev --no-peer",
+    "test:standard": "standard",
+    "test:tap": "tap --no-esm --jobs=1",
+    "version": "run-s prepare version:*",
+    "version:git": "git add cjs"
+  },
+  "standard": {
+    "ignore": [
+      "dist",
+      "cjs"
+    ]
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/bcomnes"
+  }
+}
