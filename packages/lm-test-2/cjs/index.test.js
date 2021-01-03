@@ -6,3 +6,5 @@ tap.test('exports', async (t) => {
   t.ok(foo)
   t.equal(foo.bar, 'baz', 'exports as expected')
 })
+
+console.log('foo')

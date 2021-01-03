@@ -13,6 +13,14 @@
   "bugs": {
     "url": "https://github.com/bcomnes/lm-test-2/issues"
   },
+  "devDependencies": {
+    "ascjs": "^4.0.0",
+    "mkdirp": "^1.0.4",
+    "npm-run-all2": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "standard": "^16.0.0",
+    "tap": "^14.10.8"
+  },
   "homepage": "https://github.com/bcomnes/lm-test-2",
   "keywords": [],
   "license": "MIT",
@@ -40,6 +48,6 @@
     "url": "https://github.com/sponsors/bcomnes"
   },
   "dependencies": {
-    "lm-test-1": "file:../lm-test-1"
+    "lm-test-1": "^1.0.7"
   }
 }
