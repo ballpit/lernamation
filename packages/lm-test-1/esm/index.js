@@ -4,4 +4,4 @@ export const whatever = { hey: 'you' }
 
 export const more = { woo: 'boo' }
 
-export const fdsafasd = {}
+export const fdsafasd = { fdskajfds: 'fdsfsd' }
