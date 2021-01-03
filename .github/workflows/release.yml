@@ -28,7 +28,7 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - run: npm i lerna -g # lerna uses the local version, this just gives us a global tool to work with
     - run: npm i
-    - run: lerna bootstrap
+    - run: lerna bootstrap --no-ci
     - run: npm test # block publishing on
     - run: git reset --hard && git clean -fd
 
