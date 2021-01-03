@@ -25,16 +25,14 @@ jobs:
       uses: actions/setup-node@v2.1.4
       with:
         node-version: ${{ env.node_version }}
-        # setting a registry enables the NODE_AUTH_TOKEN env variable where we can set an npm token.  REQUIRED
         registry-url: 'https://registry.npmjs.org'
     - run: npm i lerna -g # lerna uses the local version, this just gives us a global tool to work with
     - run: npm i
-    - run: npm run bootstrap
+    - run: lerna bootstrap
     - run: npm test # block publishing on
     - run: git reset --hard && git clean -fd
 
     - run: git config --global user.email "${{ env.git_email }}"
     - run: git config --global user.name "${{ github.actor }}"
+    - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} >> ~/.npmrc
     - run: lerna publish ${{ github.event.inputs.newversion }} -y
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
