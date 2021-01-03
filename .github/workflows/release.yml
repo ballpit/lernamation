@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ env.node_version }}
         registry-url: 'https://registry.npmjs.org'
-    - run: npm config package-lock false
+    - run: npm config set package-lock false
     - run: npm i lerna -g # lerna uses the local version, this just gives us a global tool to work with
     - run: npm i
     - run: lerna bootstrap --no-ci
