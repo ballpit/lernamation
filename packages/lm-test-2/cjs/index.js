@@ -2,5 +2,5 @@
 const foo = { bar: 'baz' }
 exports.foo = foo
 
-const someThing = { whatever: 'foo', more: 'blep', fdsf: 'fdsf', blab: 'bloop', fsdfds: 'fdsf', fds: 'fdsf' }
+const someThing = { whatever: 'foo', more: 'blep', fdsf: 'fdsf', blab: 'bloop', fsdfds: 'fdsf', fds: 'fdsf', fdsfdsfsd: 'dfsd' }
 exports.someThing = someThing
