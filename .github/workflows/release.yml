@@ -35,4 +35,4 @@ jobs:
     - run: git config --global user.name "${{ github.actor }}"
     - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
     - run: npm whoami
-    - run: lerna publish ${{ github.event.inputs.newversion }} -y
+    - run: lerna publish ${{ github.event.inputs.newversion }} -y --legacy-auth ${{ secrets.NPM_TOKEN }}
