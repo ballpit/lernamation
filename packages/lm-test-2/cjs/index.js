@@ -10,3 +10,6 @@ exports.noop = noop
 
 function woop () {}
 exports.woop = woop
+
+function goop () {}
+exports.goop = goop
