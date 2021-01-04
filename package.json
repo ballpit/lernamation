@@ -5,7 +5,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap --hoist --no-ci",
     "lerna-version": "lerna version",
     "lerna-publish": "lerna publish",
     "lerna-list": "lerna list",

@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       newversion:
-        description: 'lerna publish {major,minor,patch,[any args]}'
+        description: 'lerna publish {major,minor,patch}'
         required: true
 
 env:
@@ -25,14 +25,22 @@ jobs:
       uses: actions/setup-node@v2.1.4
       with:
         node-version: ${{ env.node_version }}
-    - run: npm i lerna -g # lerna uses the local version, this just gives us a global tool to work with
+        # setting a registry enables the NODE_AUTH_TOKEN env variable where we can set an npm token.  REQUIRED
+        registry-url: 'https://registry.npmjs.org'
+
     - run: npm i
-    - run: lerna bootstrap --no-ci
+    - run: npm run bootstrap
+
+    # Run tests and cleanup
     - run: npm test # block publishing on
     - run: git reset --hard && git clean -fd
 
+    # configure git
     - run: git config --global user.email "${{ env.git_email }}"
     - run: git config --global user.name "${{ github.actor }}"
-    - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
-    - run: npm whoami
-    - run: lerna publish ${{ github.event.inputs.newversion }} -y --legacy-auth ${{ secrets.NPM_TOKEN }}
+
+    # publish to github and npm
+    - run: npm i lerna -g
+    - run: lerna publish ${{ github.event.inputs.newversion }} -y
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
