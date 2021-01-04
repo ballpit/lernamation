@@ -5,3 +5,5 @@ export const someThing = { whatever: 'foo', more: 'blep', fdsf: 'fdsf', blab: 'b
 export function noop () {}
 
 export function woop () {}
+
+export function goop () {}

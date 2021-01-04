@@ -40,4 +40,5 @@ jobs:
     # publish to github and npm
     - run: npm i lerna -g
     - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
+    - run: npm whoami
     - run: lerna publish ${{ github.event.inputs.newversion }} -y
