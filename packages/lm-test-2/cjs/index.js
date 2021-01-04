@@ -7,3 +7,6 @@ exports.someThing = someThing
 
 function noop () {}
 exports.noop = noop
+
+function woop () {}
+exports.woop = woop
