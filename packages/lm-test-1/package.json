@@ -18,7 +18,7 @@
     "auto-changelog": "^2.0.0",
     "gh-release": "^4.0.0",
     "npm-run-all2": "^5.0.0",
-    "standard": "^15.0.0",
+    "standard": "^16.0.3",
     "tap": "^14.10.8"
   },
   "homepage": "https://github.com/ballpit/lernamation/tree/master/packages/lm-test-1",
