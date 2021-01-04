@@ -1,7 +1,7 @@
 {
   "name": "lm-test-1",
   "description": "WIP - nothing to see here",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "main": "cjs/index.js",
   "module": "esm/index.js",
