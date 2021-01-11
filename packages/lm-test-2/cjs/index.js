@@ -13,3 +13,6 @@ exports.woop = woop
 
 function goop () {}
 exports.goop = goop
+
+function goopfdfs () {}
+exports.goopfdfs = goopfdfs
