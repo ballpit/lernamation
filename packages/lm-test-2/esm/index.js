@@ -7,5 +7,3 @@ export function noop () {}
 export function woop () {}
 
 export function goop () {}
-
-export function goopfdfs () {}
