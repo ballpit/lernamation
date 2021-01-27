@@ -14,7 +14,7 @@
     "url": "https://github.com/ballpit/lernamation/issues"
   },
   "devDependencies": {
-    "ascjs": "^4.0.0",
+    "ascjs": "^5.0.0",
     "auto-changelog": "^2.0.0",
     "gh-release": "^4.0.0",
     "npm-run-all2": "^5.0.0",
